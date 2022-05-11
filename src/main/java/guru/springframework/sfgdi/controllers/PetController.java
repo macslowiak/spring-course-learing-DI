@@ -1,4 +1,4 @@
-package com.pets.controllers;
+package guru.springframework.sfgdi.controllers;
 
 import com.pets.services.PetService;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,7 +13,7 @@ public class PetController {
 
     private final PetService petService;
 
-    public PetController(@Qualifier("petService") PetService petService) {
+    public PetController(PetService petService) {
         this.petService = petService;
     }
 
