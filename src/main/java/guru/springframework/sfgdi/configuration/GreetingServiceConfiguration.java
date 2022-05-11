@@ -39,7 +39,7 @@ public class GreetingServiceConfiguration {
         return new PrimaryGreetingService();
     }
 
-    @Bean
+    //@Bean
     ConstructorGreetingService constructorGreetingService(){
         return new ConstructorGreetingService();
     }
